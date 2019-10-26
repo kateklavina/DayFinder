@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+ var str = " "
     @IBOutlet weak var dayFinder: UILabel!
     @IBOutlet weak var day: UILabel!
     @IBOutlet weak var dayType: UITextField!
