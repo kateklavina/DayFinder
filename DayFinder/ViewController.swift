@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  DayFinder
 //
-//  Created by Dace Laizane on 25/10/2019.
+//  Created by Kate Klavina on 25/10/2019.
 //  Copyright © 2019 Kate Klavina. All rights reserved.
 //
 
