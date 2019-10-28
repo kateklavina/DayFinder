@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WbQ-zJ-67W">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DayFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Your Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMV-pw-Le2">
-                                <rect key="frame" x="59.5" y="114" width="201.5" height="33.5"/>
+                                <rect key="frame" x="87" y="119" width="201.5" height="33.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="201.5" id="Lzb-IN-aHt"/>
                                     <constraint firstAttribute="height" constant="33.5" id="nl4-Ql-f2K"/>
@@ -25,38 +25,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7g-q7-zJL">
-                                <rect key="frame" x="112" y="442" width="96" height="46"/>
-                                <color key="backgroundColor" red="0.5" green="0.096301299470000004" blue="0.16189575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="TxF-Ps-BWw"/>
-                                    <constraint firstAttribute="width" constant="96" id="qmE-zc-ReQ">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="122"/>
-                                    </constraint>
-                                </constraints>
-                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="19"/>
-                                <state key="normal" title="Find">
-                                    <color key="titleColor" red="1" green="0.58664568650000004" blue="0.4136392411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius = 10" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="dayFinderbutton:" destination="BYZ-38-t0r" eventType="touchDown" id="sYH-rd-kCj"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day of the week inside your finder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYf-q0-hei">
-                                <rect key="frame" x="92.5" y="337" width="135" height="77"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="135" id="XzL-e8-SBG"/>
-                                    <constraint firstAttribute="height" constant="77" id="aIk-Ph-RHI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.5" green="0.096301299472191237" blue="0.16189574997922834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UfB-XU-zuo">
-                                <rect key="frame" x="45.5" y="183" width="229.5" height="122"/>
+                                <rect key="frame" x="73" y="188" width="229.5" height="122"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uCY-Xn-xCN">
                                         <rect key="frame" x="0.0" y="0.0" width="59.5" height="122"/>
@@ -106,24 +76,58 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day of the week inside your finder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYf-q0-hei">
+                                <rect key="frame" x="120" y="342" width="135" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="XzL-e8-SBG"/>
+                                    <constraint firstAttribute="height" constant="77" id="aIk-Ph-RHI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.5" green="0.096301299472191237" blue="0.16189574997922834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7g-q7-zJL">
+                                <rect key="frame" x="140" y="541" width="0.0" height="46"/>
+                                <color key="backgroundColor" red="0.5" green="0.096301299470000004" blue="0.16189575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="TxF-Ps-BWw"/>
+                                    <constraint firstAttribute="width" constant="96" id="qmE-zc-ReQ">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="169"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="19"/>
+                                <state key="normal" title="Find">
+                                    <color key="titleColor" red="1" green="0.58664568650000004" blue="0.4136392411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius = 10" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dayFinderbutton:" destination="BYZ-38-t0r" eventType="touchDown" id="sYH-rd-kCj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.58664568651051918" blue="0.41363924107673911" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UfB-XU-zuo" firstAttribute="centerX" secondItem="qh1-KP-eDm" secondAttribute="centerX" id="3lp-FH-IQX"/>
                             <constraint firstItem="gMV-pw-Le2" firstAttribute="centerX" secondItem="qh1-KP-eDm" secondAttribute="centerX" id="Kj6-Xb-Np7"/>
                             <constraint firstItem="dYf-q0-hei" firstAttribute="centerX" secondItem="qh1-KP-eDm" secondAttribute="centerX" id="Z46-AX-t2e">
-                                <variation key="heightClass=compact-widthClass=compact" constant="-195"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="-196.5"/>
                             </constraint>
                             <constraint firstItem="dYf-q0-hei" firstAttribute="top" secondItem="UfB-XU-zuo" secondAttribute="bottom" constant="32" id="dwE-AW-e3u">
-                                <variation key="heightClass=compact-widthClass=compact" constant="-113"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="-122"/>
                             </constraint>
-                            <constraint firstItem="gMV-pw-Le2" firstAttribute="top" secondItem="qh1-KP-eDm" secondAttribute="top" constant="23" id="eKz-mT-JJX"/>
-                            <constraint firstItem="UfB-XU-zuo" firstAttribute="top" secondItem="gMV-pw-Le2" secondAttribute="bottom" constant="35.5" id="eya-kc-Cpw"/>
+                            <constraint firstItem="gMV-pw-Le2" firstAttribute="top" secondItem="qh1-KP-eDm" secondAttribute="top" constant="23" id="eKz-mT-JJX">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="UfB-XU-zuo" firstAttribute="top" secondItem="gMV-pw-Le2" secondAttribute="bottom" constant="35.5" id="eya-kc-Cpw">
+                                <variation key="heightClass=compact-widthClass=compact" constant="7.5"/>
+                            </constraint>
                             <constraint firstItem="N7g-q7-zJL" firstAttribute="centerX" secondItem="qh1-KP-eDm" secondAttribute="centerX" id="hos-Si-NX3">
-                                <variation key="heightClass=compact-widthClass=compact" constant="203"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="229"/>
                             </constraint>
                             <constraint firstItem="qh1-KP-eDm" firstAttribute="bottom" secondItem="N7g-q7-zJL" secondAttribute="bottom" constant="80" id="s23-S9-ZnR">
-                                <variation key="heightClass=compact-widthClass=compact" constant="112"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="256"/>
                             </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qh1-KP-eDm"/>
@@ -139,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038.3802816901409" y="112.5"/>
+            <point key="canvasLocation" x="1037.6311844077961" y="111.2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tbw-Rt-vRa">
@@ -147,7 +151,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WbQ-zJ-67W" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ued-2p-6cc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.5" green="0.096301299470000004" blue="0.16189575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
