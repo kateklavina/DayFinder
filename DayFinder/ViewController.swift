@@ -8,17 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
  var str = ""
     @IBOutlet weak var dayFinder: UILabel!
    
-    
     @IBOutlet weak var dayType: UITextField!
  
-    
     @IBOutlet weak var monthType: UITextField!
    
-    
     @IBOutlet weak var yearType: UITextField!
     
     @IBOutlet weak var dayOfWeek: UILabel!
@@ -32,7 +29,7 @@ class ViewController: UIViewController {
     }
     func statusBarStyle (){
         let app = UINavigationBarAppearance()
-        app.backgroundColor = UIColor.red.withAlphaComponent(0.7)
+        app.backgroundColor = UIColor.purple.withAlphaComponent(1)
         app.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         
         self.navigationController?.navigationBar.scrollEdgeAppearance = app
@@ -47,6 +44,11 @@ class ViewController: UIViewController {
         var dateComponents = DateComponents()
         
         guard let day = dayType.text, let month = monthType.text, let year = yearType.text else {return}
+        
+        if day == "", month == "", year == "" {
+            warningPopup(withTitle: "Input  Error", withMessage: "Date text fields cant be empty")
+            return
+        }
         dateComponents.day = Int(day)
           dateComponents.month = Int(month)
           dateComponents.year = Int(year)
@@ -74,4 +76,14 @@ class ViewController: UIViewController {
         self.view.endEditing(true) //noņem keyborb
     }
 
+}
+extension UIViewController {
+    func warningPopup (withTitle title: String?, withMessage message: String?){
+        DispatchQueue.main.async {
+            let popUP = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            popUP.addAction(okButton)
+            self.present(popUP, animated: true, completion: nil)
+        }
+    }
 }
