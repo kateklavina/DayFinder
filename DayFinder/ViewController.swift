@@ -38,9 +38,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func dayFinderbutton(_ sender: UIButton) {
         let calendar  = Calendar.current
        
-    
-        
-        
         var dateComponents = DateComponents()
         
         guard let day = dayType.text, let month = monthType.text, let year = yearType.text else {return}
